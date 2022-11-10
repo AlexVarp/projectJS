@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO DO</title>
-    <h2>TO DO</h2>
-    <input type="text" id="input" placeholder="Enter your task">
-    <form action="#">
-        <select name="Priority" id="priority">
-            <option value="High">High</option>
-            <option value="Medium">Medium</option>
-            <option value="Low">Low</option>
-    </form>
-    <input type="button" id="add" value="Add">
+     <title>TO DO</title>
+     <link rel="stylesheet" href="style.css">
+     <section class="contenedor">
+            <div class="input">
+                <h1>TODO List using JS</h1>
+                <input type="text" id="input" placeholder="Add a new task">
+                <button id="add">Add</button>
+                <form action="#">   
+                    <label for="priority">Priority</label>
+                    <select name="priority" id="priority">
+                        <option value="1">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                </form>
+        
+            </div>
+        
+     </section>
 </head>
 <body>
     
