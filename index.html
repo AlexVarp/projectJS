@@ -5,17 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>TO DO</title>
+
      <link rel="stylesheet" href="style.css">
-     <section class="contenedor">
-            <div class="input">
-                <h1>TODO List using JS</h1>
-                <input type="text" id="task" placeholder="Add a new task" required>
-                <button onclick="function showtask()" id="add">Add</button>
-            </div>
-        
-     </section>
 </head>
 <body>
-    <script src="app.js"></script>
+    <header>
+        <h1>TO DO</h1>
+    </header>
+    <form id="task">
+        <input type="text" id="taskInput" placeholder="Add a task">
+        <input type="submit" id="submitTask" value="add">
+    </form>
+
+    <main>
+        
+        <section class="taskList">
+            <h2>Tasks</h2>
+
+            <div id="tasks">
+                <div class="task">
+                    <div class="content">
+                        <input type="text" class="text" value="My shine task" readonly />
+                    </div>
+                </div>
+                |
+                <div class="actions">
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="app.js">
+    </script>
 </body>
 </html>
